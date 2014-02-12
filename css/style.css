@@ -1,0 +1,88 @@
+/* RESET */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+/* Clearfix */
+.cf:before,
+.cf:after { content:"";display:table; }
+.cf:after { clear:both; }
+.cf { zoom:1;}
+
+
+/* Base Style */
+body {
+    font:14px/1.6 Helvetica, serif;
+    font-weight: 400;
+    color:#222;
+    -webkit-font-smoothing: antialiased;
+}
+
+#plax-field {
+  position: relative;
+  background: #000;
+  height: 100%;
+}
+#plax-field img {
+  position: absolute;
+}
+#plax-bg {
+  left: 50%;
+  margin-left: -450px;
+  top: -180px;
+}
+#plax-uc {
+  left: 50%;
+  margin-left: -86px;
+  bottom: 10px;
+}
+
+#section-2 {
+  background: url("../img/bg-s2.png") #000 no-repeat top center;
+}
+
+#work-field {
+  position: relative;
+  width: 1400px;
+  margin: 0 auto;
+  height: 100%;
+}
+.works {
+  position: absolute;
+  top: 120px;
+  left: 180px;
+}
+.works li {
+  float: left;
+  width: 129px;
+  margin-right: 4px;
+}
+.works li img {
+  width: 129px;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 1s;
+}
+.works li img:hover {
+  opacity: 1;
+}
+.works-nav {
+  position: absolute;
+  top: 480px;
+  left: 200px;
+}
+.works-nav li, 
+.works-nav li a {
+  font-size: 12px;
+  color :#fff;
+  text-decoration: none;
+}
+.works-nav li a {
+  text-decoration: none;
+  transition: opacity 1s;
+}
+.works-nav li a:hover {
+  opacity: 0.5;
+}
+.last-nav {
+  margin-top: 80px;
+}

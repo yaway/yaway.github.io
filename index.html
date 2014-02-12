@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Cherry's</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/curtain.css">
+</head>
+<body>
+
+<ol class="curtains">
+    <li id＝"section-1" class="cover"> 
+      <div id="plax-field">
+        <img id="plax-bg" src="img/bg-s1.png" alt="">
+        <img id="plax-uc" src="img/under-construction.png" alt="">
+      </div>
+    </li>
+    <li id="section-2" class="cover">
+      <div id="work-field">
+        <ul id="work-1" class="works cf">
+          <li><img src="img/sketch/1s.png" alt=""></li>
+          <li><img src="img/sketch/2s.png" alt=""></li>
+          <li><img src="img/sketch/3s.png" alt=""></li>
+          <li><img src="img/sketch/4s.png" alt=""></li>
+          <li><img src="img/sketch/5s.png" alt=""></li>
+        </ul>
+        <ul id="work-2" class="works cf" style="display:none;">
+          <li><img src="img/meowfilm/1s.png" alt=""></li>
+          <li><img src="img/meowfilm/2s.png" alt=""></li>
+          <li><img src="img/meowfilm/3s.png" alt=""></li>
+          <li><img src="img/meowfilm/4s.png" alt=""></li>
+          <li><img src="img/meowfilm/5s.png" alt=""></li>
+        </ul>
+        <ul id="work-btns" class="works-nav">
+          <li><a id="work-1-btn" href="">SKETCH</a></li>
+          <li><a id="work-2-btn" href="">MEOW FILM</a></li>
+          <li class="last-nav">MORE ADDING...</li>
+        </ul>
+      </div>
+    </li>
+</ol>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/plax.js"></script>
+  <script src="js/curtain.js"></script>
+  <script>
+    $(function () {
+      $('#plax-bg').plaxify({"xRange":50,"yRange":50,"invert":true})
+      $.plax.enable()
+    })
+
+    $(function () {
+      $('.curtains').curtain({
+        scrollSpeed: 400
+      });
+    });
+    $(function () {
+      $('#work-btns').on('click', '#work-2-btn', function(e){
+        $('#work-1').slideUp();
+        $('#work-2').slideDown();
+        e.preventDefault();
+      })
+      $('#work-btns').on('click', '#work-1-btn', function(e){
+        $('#work-2').slideUp();
+        $('#work-1').slideDown();
+        e.preventDefault();
+      })
+    })
+
+  </script>
+</body>
+</html>
